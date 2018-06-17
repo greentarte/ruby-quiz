@@ -4,11 +4,11 @@
 
 
 # 여기에 코드 입력
-puts "숫자를 입력해주세요"
-input = gets.chomp
-num= input.to_i
-if (num.odd?)
-    puts "Odd"
-else
-    puts "Even"
-end
+def evencheck(num)
+    # if num%2 == 0
+    #   "Even"
+    # else
+    #   "Odd"
+    # end
+    num.even? ? 'Even' : 'Odd'
+  end
